@@ -4,9 +4,7 @@ Abby and Henry  Project: tower-power
 Research
 --------
 
-*6/12/17*
-
-Dr. Kragelund suggested looking at the following documents as a starting reference for UAV communication.
+*6/12/17* Dr. Kragelund suggested looking at the following documents as a starting reference for UAV communication.
 
 Powerpoint by D. J. Lee on Wireless Communication
 Although his project was a little different, there are still aspects involving UAV radio communications between a ground node.
@@ -16,20 +14,18 @@ Note the slides 5-6 with the map, and 12-14 with the calculations and specifics 
 Paper by D. J. Lee on Wireless Communication
 <https://calhoun.nps.edu/bitstream/handle/10945/52691/Hybrid_Control_of_Long_Endurance.pdf?sequence=1&isAllowed=y>
 
-*6/15/17*
-
-Rough Procedure/Research Outline
+*6/15/17* Rough Procedure/Research Outline
 
 Scenario 1
 
 *This is a really rough outline of how I think the experiment would be performed as of now. This is mainly to help me organize the topics for my research with questions.*
 1. Launch scan eagle
 2. Get to an orbit that fits 1 degree/sec ang velocity.
-  -How to get scan eagle to flight path, and how to determine angular velocity?
-  -Based on scan eagles velocity and ang velocity, somehow calculate dist away (radius) from antenna to orbit from at all times.
+  - How to get scan eagle to flight path, and how to determine angular velocity?
+  - Based on scan eagles velocity and ang velocity, somehow calculate dist away (radius) from antenna to orbit from at all times.
 3. Complete an orbit at 0 degrees banking angle (flat).
-  -Scan eagle will be orbiting in a circle, so its pose will be constantly changing. x, y will change; z (height) will stay constant. Roll will change, pitch and yaw will be constant.
-  -Roll = Banking angle!!
+  - Scan eagle will be orbiting in a circle, so its pose will be constantly changing. x, y will change; z (height) will stay constant. Roll will change, pitch and yaw will be constant.
+  - Roll = Banking angle!!
 4. After every orbit, rotate the scan eagle banking angle 5 degrees or however many degrees towards the antenna.
   - How much can scan eagle roll? What kinds of increments? 5 degrees? 10 degrees?
 5. While orbiting, scan eagle is taking readings of the SNR at certain intervals (of time of distance?)
@@ -40,9 +36,7 @@ Scenario 1
 7. Compare the maps to see which bank angle produced the greatest SNR.
 8. Repeat this process with a 10 degree/sec orbit.
 
-*6/16/17*
-
-Pretty helpful website detailing ros gridmap. How to implement and important methods.
+*6/16/17* Pretty helpful website detailing ros gridmap. How to implement and important methods.
 Will come in handy for generating 3D maps
 
 <https://www.researchgate.net/publication/284415855_A_Universal_Grid_Map_Library_Implementation_and_Use_Case_for_Rough_Terrain_Navigation>
