@@ -1,13 +1,11 @@
-Abby and Henry Project!!
-========================
-
-Tower-Power
-===========
+Abby and Henry  Project: tower-power
+====================================
 
 Research
 --------
 
 *6/12/17*
+
 Dr. Kragelund suggested looking at the following documents as a starting reference for UAV communication.
 
 Powerpoint by D. J. Lee on Wireless Communication
@@ -19,7 +17,9 @@ Paper by D. J. Lee on Wireless Communication
 <https://calhoun.nps.edu/bitstream/handle/10945/52691/Hybrid_Control_of_Long_Endurance.pdf?sequence=1&isAllowed=y>
 
 *6/15/17*
+
 Rough Procedure/Research Outline
+
 Scenario 1
 
 *This is a really rough outline of how I think the experiment would be performed as of now. This is mainly to help me organize the topics for my research with questions.*
@@ -30,7 +30,7 @@ Scenario 1
 3. Complete an orbit at 0 degrees banking angle (flat).
   -Scan eagle will be orbiting in a circle, so its pose will be constantly changing. x, y will change; z (height) will stay constant. Roll will change, pitch and yaw will be constant.
   -Roll = Banking angle!!
-4. After every orbit, rotate the scan eagle banking angle 5 degrees or however many degrees towards the antenna
+4. After every orbit, rotate the scan eagle banking angle 5 degrees or however many degrees towards the antenna.
   - How much can scan eagle roll? What kinds of increments? 5 degrees? 10 degrees?
 5. While orbiting, scan eagle is taking readings of the SNR at certain intervals (of time of distance?)
 6. After scan eagle finished flying, take the data recorded by scan eagle and create a 3D map of each orbit with unique bank angle.
@@ -41,16 +41,9 @@ Scenario 1
 8. Repeat this process with a 10 degree/sec orbit.
 
 *6/16/17*
+
 Pretty helpful website detailing ros gridmap. How to implement and important methods.
 Will come in handy for generating 3D maps
 
 <https://www.researchgate.net/publication/284415855_A_Universal_Grid_Map_Library_Implementation_and_Use_Case_for_Rough_Terrain_Navigation>
-
-
-Testing escape sequences with markdown. Will remove soon.
-'tower-power' not highlighted
-tower's power highlighted
-tower\'s power highlighted
-''tower's power'' not highlighted
-"tower's power" not highlighted
 
