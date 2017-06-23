@@ -1,4 +1,4 @@
-Abby and Henry  Project: tower-power
+Abby and Henry's  Project: tower-power
 ====================================
 
 Research
@@ -43,9 +43,9 @@ Will come in handy for generating 3D maps
 
 Interpolation of Two Data Points to Find the Radius of the Scan Eagle in Relation to Angular Velocity
 =====================================================================================================
-We were given two data points in order to determine the radius of the Scan Eagle's path at a certain angular velocity (from 1&deg; to 10&deg;).
-1&deg; = 2000m
-10&deg; = 500m
+We were given two data points in order to determine the radius of the Scan Eagle's path at a certain angular velocity (from 1&deg;/sec to 10&deg;/sec).
+1&deg;/sec = 2000m
+10&deg;/sec = 500m
 
 The linear model would be y = ((-166+(2/3))x)+(2166+(2/3))
 This will provide this graph:
