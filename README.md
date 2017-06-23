@@ -50,6 +50,6 @@ We were given two data points in order to determine the radius of the Scan Eagle
 The linear model would be y = ((-166+(2/3))x)+(2166+(2/3))
 This will provide this graph:
 
-![Graph of Angular Velocity vs. Radius](avelocity_v_radius.png) "Graph of Angular Velocity vs. Radius")
+![Graph of Angular Velocity vs. Radius](avelocity_vs_radius.png) "Graph of Angular Velocity vs. Radius")
 
 
