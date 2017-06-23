@@ -41,3 +41,15 @@ Will come in handy for generating 3D maps
 
 <https://www.researchgate.net/publication/284415855_A_Universal_Grid_Map_Library_Implementation_and_Use_Case_for_Rough_Terrain_Navigation>
 
+Interpolation of Two Data Points to Find the Radius of the Scan Eagle in Relation to Angular Velocity
+=====================================================================================================
+We were given two data points in order to determine the radius of the Scan Eagle's path at a certain angular velocity (from 1&deg; to 10&deg;).
+1&deg; = 2000m
+10&deg; = 500m
+
+The linear model would be y = ((-166+(2/3))x)+(2166+(2/3))
+This will provide this graph:
+
+![Graph of Angular Velocity vs. Radius](avelocity_v_radius.png) "Graph of Angular Velocity vs. Radius")
+
+
