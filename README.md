@@ -24,7 +24,7 @@ Scenario 1
   - How to get scan eagle to flight path, and how to determine angular velocity?
   - Based on scan eagles velocity and ang velocity, somehow calculate dist away (radius) from antenna to orbit from at all times.
 3. Complete an orbit at 0 degrees banking angle (flat).
-  - Scan eagle will be orbiting in a circle, so its pose will be constantly changing. x, y will change; z (height) will stay constant. Roll will change, pitch and yaw will be constant.
+  - Scan eagle will be orbiting in a circle, so its pose will be constantly changing. x, y will change; z (height) will stay constant. Roll and yaw will change, pitch will be constant.
   - Roll = Banking angle!!
 4. After every orbit, rotate the scan eagle banking angle 5 degrees or however many degrees towards the antenna.
   - How much can scan eagle roll? What kinds of increments? 5 degrees? 10 degrees?
@@ -40,6 +40,32 @@ Scenario 1
 Will come in handy for generating 3D maps
 
 <https://www.researchgate.net/publication/284415855_A_Universal_Grid_Map_Library_Implementation_and_Use_Case_for_Rough_Terrain_Navigation>
+
+*6/23/17* Basic Antenna terminology discussed along with units and formulas.
+<http://www.antenna-theory.com/>
+
+Breakdown of Antenna Plots
+![Antenna Plot 1](antennaplot1.png "Graph of Antenna Plot 1")
+![Antenna Plot 2](antennaplot2.png "Graph of Antenna Plot 2")
+
+X axis: Degrees
+
+Y axis: Gain (dBi) dBi is decibels relative to isotropic/omnidirectional antenna. Generally same as dB.
+
+Power Gain: gain(dB) = 10log(POut/PIn) *P is expressed in Watts*
+
+Voltage Gain: gain(dB) = 10log((VOut^2/ROut)/(VIn^2/ROut))   *Or if the ROuts are equal(which they usu. are)*
+
+gain(dB) = 20log(VOut/VIn)
+
+In the case of our antenna plots, gain is negative because ratios between VOut/VIn or POut/PIn are less than 1, which means the signal doesn't vary as much between input and output, so the antenna is a low gain antenna aka omnidirectional.(no signals are concentrated in certain areas like in a dish antenna/high gain)
+
+Signal/Noise
+
+SNR(dBm) = (P_{r(dBm)})/(P_{n(dBm))
+
+P(dBm) = 10log(P(W)/1mW)
+
 
 Interpolation of Two Data Points to Find the Radius of the Scan Eagle in Relation to Angular Velocity
 =====================================================================================================
