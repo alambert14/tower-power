@@ -52,17 +52,18 @@ X axis: Degrees
 
 Y axis: Gain (dBi) dBi is decibels relative to isotropic/omnidirectional antenna. Generally same as dB.
 
-Power Gain: gain(dB) = 10log(POut/PIn) *P is expressed in Watts*
+- The colored lines are frequencies in gigahertz (GHz)
 
-Voltage Gain: gain(dB) = 10log((VOut^2/ROut)/(VIn^2/ROut))   *Or if the ROuts are equal(which they usu. are)*
+- Power Gain: gain(dB) = 10log(POut/PIn) *P is expressed in Watts*
 
-gain(dB) = 20log(VOut/VIn)
+- Voltage Gain: gain(dB) = 10log((VOut^2/ROut)/(VIn^2/ROut))   *Or if the ROuts are equal(which they usu. are)*
+__gain(dB) = 20log(VOut/VIn)__
 
 In the case of our antenna plots, gain is negative because ratios between VOut/VIn or POut/PIn are less than 1, which means the signal doesn't vary as much between input and output, so the antenna is a low gain antenna aka omnidirectional.(no signals are concentrated in certain areas like in a dish antenna/high gain)
 
 Signal/Noise
 
-SNR(dBm) = (P_{r(dBm)})/(P_{n(dBm))
+SNR(dBm) = (Pr(dBm))/(Pn(dBm))
 
 P(dBm) = 10log(P(W)/1mW)
 
