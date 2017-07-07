@@ -1,6 +1,16 @@
 Abby and Henry's  Project: tower-power
 ====================================
 
+*6/29/17* Project Write-Up
+          ----------------
+
+Dr. Horner came in an briefed about a general approach to engineering projects and specifically the scan_eagle project.
+ 
+Project Write-Up <https://docs.google.com/document/d/1eaS7o_meHWN8v9sJA0HZuiy4acDUeysEh0DWbc1Qd-s/edit>
+
+
+
+
 Research
 --------
 
@@ -44,9 +54,12 @@ Will come in handy for generating 3D maps
 *6/23/17* Basic Antenna terminology discussed along with units and formulas.
 <http://www.antenna-theory.com/>
 
-Breakdown of Antenna Plots
+Breakdown of Antenna Plots in Cartesian and Polar Format
 ![Antenna Plot 1](antennaplot1.png "Graph of Antenna Plot 1")
+![Antenna Plotp1](antennaplotp1.png "Graph of Antenna Plot 1")
+
 ![Antenna Plot 2](antennaplot2.png "Graph of Antenna Plot 2")
+![Antenna Plotp2](antennaplotp2.png "Graph of Antenna Plot 2")
 
 X axis: Degrees
 
@@ -79,4 +92,53 @@ This will provide this graph:
 
 ![Graph of Angular Velocity vs. Radius](avelocity_vs_radius.png "Graph of Angular Velocity vs. Radius")
 
+*7/3/17* 
+Characteristics of Antenna/Antenna Pattern
+==========================================
+
+The characteristics of a transmitter and reciever's communication can be modeled here.
+
+![Diagram of Transmitter and Reciever](antennaDiagram.jpg "Diagram of Antenna Communication")
+
+SIGNAL(RSSI):
+- Measured in dBm from -120dB to 0 dB. (closer to 0 means stronger signal)
+- Usual range around -87 to -45 dB
+- Affected by Access Point (AP) transmit power, Free space path loss, and reciever antenna.
+- RSSI value is pulled from the reciever/client side, therefore not the same as transmitted power from transmitter(EIRP).
+- EIRP(Transmitter's effective power) (dBm) = AP's signal power(dBm) + Antenna Gain(dBi)
+
+_RSSI(dB) = (EIRP - 0.2(Dist from Antenna)) + Antenna Gain_
+
+
+Side topics to understand more:
+
+- IEEE 802.11
+
+NOISE:(needs more research)
+- Measured from -120 to 0 dBm (where -120 is the worst noise signal = better RSSI signal)
+- Noise is treated like its own signal. 
+- Highly fluctuating in the environment/Not constant.
+- _Assumed at -95 dBm_
+SNR:
+
+_SNR(dB) = Signal Value(dB) - Noise Value(dB)_
+
+It is confusing that SNR is a subtraction problem, but due to the logarithmic nature of decibels, the ratio of SNR is represented as a difference.
+Proof under *Decibels*: <https://en.wikipedia.org/wiki/Signal-to-noise_ratio>
+
+*7/5/17*
+Viewing SNR
+===========
+
+iwconfig: Similar to ifconfig, but is dedicated to wireless interfaces. Used to set network interface parameters, and display them.
+
+_Command to see network parameters: watch -n1 iwconfig_
+
+Program to see Signal, Noise, SNR, Link Quality: Wavemon
+
+Router ESSID: REMUS_NPS
+
+*7/6/17*
+Using the router to acquire field test data from NPS Quad as well as Carmel High School
+Data displayed in spreadsheets that model signal/noise and link quality as a function of distance.
 
