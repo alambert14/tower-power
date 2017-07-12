@@ -141,4 +141,24 @@ Router ESSID: REMUS_NPS
 *7/6/17*
 Using the router to acquire field test data from NPS Quad as well as Carmel High School
 Data displayed in spreadsheets that model signal/noise and link quality as a function of distance.
+Plots display how close our theoretical model: _RSSI(dB) = (EIRP - 0.2(Dist from Antenna)) + Antenna Gain_
+was to the observed outcome
 
+*7/10/17*
+![RSSI Avevs Link Quality](Ave RSSI_LQ.png "Plot of Average RSSI and Link Quality")
+
+Here is the image for ave. link quality vs ave. RSSI. I've included the trend lines as well as their formulas. I'm not sure the formal way to determine the % similarity, but it is obvious that link quality and RSSI are closely related, according to their best fit slopes and curve shapes.
+On another note, I compared the RSSI data to the theoretical model equation we compiled a couple days ago. RSSI = (EIRP - 0.02(Dist from Antenna)) + Antenna gain
+
+
+For the EIRP, I averaged all ten of the RSSI values at distance = 0  and got -25.8 dBm.
+I also disregarded the antenna gain, which I can find later. It would only be a vertical shift and won't fundamentally change the shape of the curve.
+
+RSSI Expected is displayed by the equation: y = -0.02x - 25.8
+
+![RSSI Expected vs 10 Trials](RSSI Ex vs 10 trials.png "Plot of RSSI Expected and 10 Trials")
+![RSSI Expected vs RSSI Ave](RSSI E vs Ave.png "Plot of RSSI Expected and RSSI Average")
+
+For the RSSI expected vs RSSI Average graph, I added a trend line, which is modeled by the equation, y = -.058x - 50.373
+Again, I compared them using their slopes (I will research a more effective method of comparison), where the expected was  -0.02 and observed was -0.058.
+I'm guessing that is not very similar, so the experiment varied quite significantly from the theoretical RSSI model.
