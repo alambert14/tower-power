@@ -127,6 +127,7 @@ It is confusing that SNR is a subtraction problem, but due to the logarithmic na
 Proof under *Decibels*: <https://en.wikipedia.org/wiki/Signal-to-noise_ratio>
 
 *7/5/17*
+
 Viewing SNR
 ===========
 
@@ -141,4 +142,23 @@ Router ESSID: REMUS_NPS
 *7/6/17*
 Using the router to acquire field test data from NPS Quad as well as Carmel High School
 Data displayed in spreadsheets that model signal/noise and link quality as a function of distance.
+
+*7/11/17*
+
+IEEE 802.11
+===========
+
+802.11 is a set of media access control and physical layer specifications for wireless networks in a variety of frequency bands. There are several generations called protocols which hardware and networks are configured under. (802.11a, b, g, n, ac, ad, etc)
+
+Common protocols:
+
+802.11a (ODFM waveform): 5.8 GHz, 1.5 - 54 MBits/s
+Hi carrier freq., more absorbance through objects/lower range. Less crowded than common 2.4 GHz
+
+802.11b: 2.4 GHz, max bitrate 11 MBits/s
+Low price, interference from other devices like microwaves.
+
+802.11g: 2.4 GHz, max bitrate 54 MBits/s
+Backwards compatible with 802.11b.
+
 
