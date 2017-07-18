@@ -182,4 +182,8 @@ Low price, interference from other devices like microwaves.
 802.11g: 2.4 GHz, max bitrate 54 MBits/s
 Backwards compatible with 802.11b.
 
+Continuous Data Collection (7/18/17)
+====================================
+The biggest problem that needs to be solved for continuous data collection is somehow syncing the link quality and signal data with the distance away from the radio. The goal is to link all of these based on time; however, that will reqiure parsing of each piece of data and then matching the times to the best amount of accuracy.
 
+Currently we have a script that will parse and manipulate the SNMP data to be imported into MATLAB. We need to run more trials of the experiment while actually transferring data on the signal. 
