@@ -12,7 +12,7 @@ from pynmea import nmea
 ser = serial.Serial()
 ser.port = "/dev/ttyUSB0"
 ser.baudrate = 4800
-ser.timeout = 1
+ser.timeout = .5
 ser.open()
 gpbwc = nmea.GPBWC()
 while True:
