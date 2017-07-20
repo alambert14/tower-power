@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#__author__ = 'Amal G Jose'
+__author__ = 'Amal G Jose'
 
 import time
 import serial
