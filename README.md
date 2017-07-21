@@ -55,11 +55,11 @@ Will come in handy for generating 3D maps
 <http://www.antenna-theory.com/>
 
 Breakdown of Antenna Plots in Cartesian and Polar Format
-![Antenna Plot 1](antennaplot1.png "Graph of Antenna Plot 1")
-![Antenna Plotp1](antennaplotp1.png "Graph of Antenna Plot 1")
+![Antenna Plot 1](diagrams/antennaplot1.png "Graph of Antenna Plot 1")
+![Antenna Plotp1](diagrams/antennaplotp1.png "Graph of Antenna Plot 1")
 
-![Antenna Plot 2](antennaplot2.png "Graph of Antenna Plot 2")
-![Antenna Plotp2](antennaplotp2.png "Graph of Antenna Plot 2")
+![Antenna Plot 2](diagrams/antennaplot2.png "Graph of Antenna Plot 2")
+![Antenna Plotp2](diagrams/antennaplotp2.png "Graph of Antenna Plot 2")
 
 X axis: Degrees
 
@@ -90,7 +90,7 @@ We were given two data points in order to determine the radius of the Scan Eagle
 The linear model would be y = ((-166+(2/3))x)+(2166+(2/3))
 This will provide this graph:
 
-![Graph of Angular Velocity vs. Radius](avelocity_vs_radius.png "Graph of Angular Velocity vs. Radius")
+![Graph of Angular Velocity vs. Radius](diagrams/avelocity_vs_radius.png "Graph of Angular Velocity vs. Radius")
 
 *7/3/17* 
 Characteristics of Antenna/Antenna Pattern
@@ -98,7 +98,7 @@ Characteristics of Antenna/Antenna Pattern
 
 The characteristics of a transmitter and reciever's communication can be modeled here.
 
-![Diagram of Transmitter and Reciever](antennaDiagram.jpg "Diagram of Antenna Communication")
+![Diagram of Transmitter and Reciever](diagrams/antennaDiagram.jpg "Diagram of Antenna Communication")
 
 SIGNAL(RSSI):
 - Measured in dBm from -120dB to 0 dB. (closer to 0 means stronger signal)
@@ -146,7 +146,7 @@ Plots display how close our theoretical model: _RSSI(dB) = (EIRP - 0.2(Dist from
 was to the observed outcome
 
 *7/10/17*
-![RSSI Ave vs Link Quality](Ave_RSSI_LQ.png "Plot of Average RSSI and Link Quality")
+![RSSI Ave vs Link Quality](diagrams/Ave_RSSI_LQ.png "Plot of Average RSSI and Link Quality")
 
 Here is the image for ave. link quality vs ave. RSSI. I've included the trend lines as well as their formulas. I'm not sure the formal way to determine the % similarity, but it is obvious that link quality and RSSI are closely related, according to their best fit slopes and curve shapes.
 On another note, I compared the RSSI data to the theoretical model equation we compiled a couple days ago. RSSI = (EIRP - 0.02(Dist from Antenna)) + Antenna gain
@@ -157,8 +157,8 @@ I also disregarded the antenna gain, which I can find later. It would only be a 
 
 RSSI Expected is displayed by the equation: y = -0.02x - 25.8
 
-![RSSI Expected vs 10 Trials](RSSI_Ex_vs_10_trials.png "Plot of RSSI Expected and 10 Trials")
-![RSSI Expected vs RSSI Ave](RSSI_E_vs_Ave.png "Plot of RSSI Expected and RSSI Average")
+![RSSI Expected vs 10 Trials](diagrams/RSSI_Ex_vs_10_trials.png "Plot of RSSI Expected and 10 Trials")
+![RSSI Expected vs RSSI Ave](diagrams/RSSI_E_vs_Ave.png "Plot of RSSI Expected and RSSI Average")
 
 For the RSSI expected vs RSSI Average graph, I added a trend line, which is modeled by the equation, y = -.058x - 50.373
 Again, I compared them using their slopes (I will research a more effective method of comparison), where the expected was  -0.02 and observed was -0.058.
