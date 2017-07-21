@@ -1,8 +1,11 @@
-sudo su
-cd ~/MTX/SnmpPoller
-node server.js &
+#!/bin/bash
 
-cd
-cd Experiment
-./bwc_parse.py &
-./wlan0_parser.sh &
+cd ~/code/tower-power/Experiment
+
+gnome-terminal -e ./bwc_parse.py 
+gnome-terminal -e ./wlan0_parser.sh 
+#gnome-terminal -e ./scp152.sh 
+
+cd ~/MTX/SnmpPoller
+
+sudo node server.js
