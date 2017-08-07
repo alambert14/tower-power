@@ -1,0 +1,9 @@
+wlan0     IEEE 802.11abgn  ESSID:"CNTX82"  
+          Mode:Managed  Frequency:2.412 GHz  Access Point: 06:30:1A:42:66:25   
+          Bit Rate=54 Mb/s   Tx-Power=22 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=70/70  Signal level=-9 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:39   Missed beacon:0
+
