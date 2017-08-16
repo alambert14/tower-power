@@ -1,4 +1,4 @@
-#!/usr/env/bin python
+#!/usr/bin/env python
 
 
 #FUNCTIONS NECESSARY BECAUSE OF DIFFERERENCES IN DISTANCE LENGTH
@@ -6,7 +6,7 @@
 def grab_distance(line):
     end_str = ""
     for ch in line:
-	if ch != ',':
+        if ch != ',':
 	    end_str += ch
 	elif ch == ',':
 	    return end_str
@@ -15,10 +15,11 @@ def grab_snr(line):
     end_str = ""
     start_snr = False
     for ch in line:
-        if ch !=',';
+        if start_snr:
+	    if ch != "\n":
+	 	end_str += ch
+	if ch == ',':
 	    start_snr = True
-	if start_snr
-	    end_str += ch
     return end_str
 
     
@@ -42,9 +43,11 @@ all_matches = []
 for i, trial_file in enumerate(file_array):
     #each file becomes an array of each line
     orig_trial = trial_file.readlines()
+    print "Starting file " + str(i)
     for line in orig_trial:
 	#grab the distance from the current line
 	orig_dist = grab_distance(line)
+	print "Distance: " + orig_dist
 	#checks for first match so distance is only printed once
 	first_match = True
 	current_line = ""
@@ -54,17 +57,16 @@ for i, trial_file in enumerate(file_array):
 	    if j > i:
 		comp_trial = comp_file_next.readlines()
 		for line2 in comp_trial:
-		    comp_dist = grab_distance(line)
+		    comp_dist = grab_distance(line2)
 		    if orig_dist == comp_dist:
-			print "Match found!"
+			print "Match found! Files " + str(i) + ", " + str(j)
 			#if this is the first match, add the distance and the matched SNRs to the line
-			if first_match:
-			    current_line = orig_dist
-			    current_line = current_line + "," + grab_snr(line) + "," + grab_snr(line2)
+			if first_match == True:
+			    current_line = orig_dist + "," + grab_snr(line) + "," + grab_snr(line2)
 			    first_match = False
 			else:
 			    current_line = current_line + "," + grab_snr(line2)
-	print current_line	
+	print current_line
 	all_matches.append(current_line + "\n")   
 			
 #CODE TO REMOVE DUPLICATES
@@ -91,10 +93,10 @@ for match in all_matches:
 	if not kill:
 	    final_list.append(match)
 
-write_file = open('distances_matched_snr.txt','w+')
+#write_file = open('distances_matched_snr.txt','w+')
 
-for line in final_list:
-    write_file.write(line)
+#for line in final_list:
+#    write_file.write(line)
 
 
 
