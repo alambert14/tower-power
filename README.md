@@ -187,3 +187,7 @@ Continuous Data Collection (7/18/17)
 The biggest problem that needs to be solved for continuous data collection is somehow syncing the link quality and signal data with the distance away from the radio. The goal is to link all of these based on time; however, that will reqiure parsing of each piece of data and then matching the times to the best amount of accuracy.
 
 Currently we have a script that will parse and manipulate the SNMP data to be imported into MATLAB. We need to run more trials of the experiment while actually transferring data on the signal. 
+
+Final Project (9/7/17)
+======================
+The data has been compiled into a 2D aerial simulation of a scanEagle drone flying to an optimal point in between two ground nodes. All the simulation information can be viewed under the Final_Project_Write-Up_Kou.pdf document. Thank you all who has helped me on this internship journey, and this is the end of Tower Power!!!!
